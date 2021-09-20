@@ -1,0 +1,1 @@
+In Dockerfile_backend, the 'EXPOSE 8080' was deleted and 'ENV REQUEST_ORIGIN=http://localhost:5000' changed into 'ENV REQUEST_ORIGIN=http://localhost' in order to eliminate CORS problems.

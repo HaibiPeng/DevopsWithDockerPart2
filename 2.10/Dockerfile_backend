@@ -1,0 +1,10 @@
+FROM golang:1.16
+
+ENV REQUEST_ORIGIN=http://localhost
+
+WORKDIR /usr/src/app
+COPY ./example-backend ./
+
+RUN go build
+
+CMD ["./server"]
